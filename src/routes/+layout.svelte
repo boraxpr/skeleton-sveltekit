@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
@@ -24,7 +24,17 @@
 </script>
 
 <!-- App Shell -->
-<AppShell>
+<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+	<svelte:fragment slot="sidebarLeft">
+		<!-- Insert the list: -->
+		<nav class="list-nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/todo">Todo</a></li>
+			</ul>
+		</nav>
+		<!-- --- -->
+	</svelte:fragment>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar>
@@ -34,28 +44,22 @@
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
+					href="https://www.linkedin.com/in/naipawat/"
 					target="_blank"
 					rel="noreferrer"
 				>
-					Discord
+					LinkedIn
 				</a>
+
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Twitter
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
+					href="https://github.com/boraxpr"
 					target="_blank"
 					rel="noreferrer"
 				>
 					GitHub
 				</a>
+				<LightSwitch />
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
