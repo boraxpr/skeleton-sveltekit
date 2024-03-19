@@ -1,38 +1,26 @@
-# create-svelte
+# Skeleton-SvelteKit 💀
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Skeleton-SvelteKit is a project aimed at exploring the capabilities of SvelteKit and the SkeletonUI framework.
+Installation
 
-## Creating a project
+## Installation
 
-If you're seeing this, you've probably already done this step. Congrats!
+To install the project dependencies, run the following command:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+npm i
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+To start the development server, run:
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+The development server will be running on port 3000 because the default port is configured in the package.json > dev > vite --port 3000. This port configuration is necessary due to the CORS protection setup in the API used in the project.
 
-To create a production version of your app:
+<br>
 
-```bash
-npm run build
-```
+## Features
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+/todo : Displays a table that fetches data from an API using server-side rendering (SSR) to prevent API endpoint leaks to the client.
