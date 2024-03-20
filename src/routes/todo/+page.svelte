@@ -1,10 +1,19 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import { Table, tableMapperValues, type TableSource } from '@skeletonlabs/skeleton';
 
 	export let data: PageData;
-	console.log(data);
+	const tableSimple: TableSource = {
+		// A list of heading labels.
+		head: ['id', 'note'],
+		// The data visibly shown in your table body UI.
+		body: tableMapperValues(data.todos, ['id', 'note']),
+		// Optional: A list of footer labels.
+		foot: ['Total', '', '<code class="code">' + data.todos.length + '</code>']
+	};
 </script>
 
+<Table source={tableSimple} />
 <div class="table-container">
 	<!-- Native Table Element -->
 	<table class="table table-hover">
