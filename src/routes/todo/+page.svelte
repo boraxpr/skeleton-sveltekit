@@ -9,7 +9,7 @@
 		// The data visibly shown in your table body UI.
 		body: tableMapperValues(data.todos, ['id', 'note']),
 		// Optional: A list of footer labels.
-		foot: ['Total', '', '<code class="code">' + data.todos.length + '</code>']
+		foot: ['Total', '<code class="code">' + data.todos.length + '</code>']
 	};
 </script>
 
