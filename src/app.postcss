@@ -3,6 +3,15 @@
 @tailwind utilities;
 @tailwind variants;
 
+@font-face {
+	font-family: 'PressStart2P';
+	src: url('/fonts/PressStart2P-Regular.ttf');
+}
+
+:root [data-theme='vintage'] {
+	--theme-font-family-heading: 'PressStart2P';
+	--theme-font-family-base: 'PressStart2P';
+}
 html,
 body {
 	@apply h-full overflow-hidden;
