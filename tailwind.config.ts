@@ -37,14 +37,28 @@ export default {
 					'0%': { transform: 'translateY(0)' },
 					'50%': { transform: 'translateY(25px)' },
 					'100%': { transform: 'translateY(0)' }
+				},
+				flip: {
+					'0%': { transform: 'rotateY(0)' },
+					'50%': { transform: 'rotateY(360deg)' },
+					'100%': { content: 'none' }
+				},
+				shake: {
+					'0%': { transform: 'translateX(0)' },
+					'25%': { transform: 'translateX(-2px) translateY(-1px)' },
+					'50%': { transform: 'translateX(2px) translateY(1px)' },
+					'75%': { transform: 'translateX(-1px) translateY(-2px)' },
+					'100%': { transform: 'translateX(0) translateY(0)' }
 				}
 			},
 			animation: {
-				float1: 'float1 6s ease-in-out infinite',
-				float2: 'float2 6s ease-in-out infinite',
+				float1: 'float1 3s ease-in-out infinite',
+				float2: 'float2 3s ease-in-out infinite',
 				float3: 'float3 6s ease-in-out infinite',
-				float4: 'float4 6s ease-in-out infinite',
-				float5: 'float5 6s ease-in-out infinite'
+				float4: 'float4 3s ease-in-out infinite',
+				float5: 'float5 3s ease-in-out infinite',
+				flip: 'flip 3s ease-in-out infinite',
+				shake: ' shake 0.1s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite'
 			}
 		}
 	},
