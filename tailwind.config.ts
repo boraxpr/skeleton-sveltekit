@@ -15,12 +15,12 @@ export default {
 			keyframes: {
 				float1: {
 					'0%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(-20px)' },
+					'50%': { transform: 'translateY(-10px) translateX(-10px)' },
 					'100%': { transform: 'translateY(0)' }
 				},
 				float2: {
 					'0%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(15px)' },
+					'50%': { transform: 'translateY(10px) translateX(-10px)' },
 					'100%': { transform: 'translateY(0)' }
 				},
 				float3: {
@@ -30,12 +30,12 @@ export default {
 				},
 				float4: {
 					'0%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(-25px)' },
+					'50%': { transform: 'translateY(-10px) translateX(10px)' },
 					'100%': { transform: 'translateY(0)' }
 				},
 				float5: {
 					'0%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(25px)' },
+					'50%': { transform: 'translateY(10px) translateX(10px)' },
 					'100%': { transform: 'translateY(0)' }
 				},
 				flip: {
