@@ -36,7 +36,7 @@
 	<Navigation />
 </Drawer>
 <!-- App Shell -->
-<AppShell slotSidebarLeft="bg-surface-500/5 w-0 lg:w-56 p-4">
+<AppShell slotSidebarLeft="bg-surface-500/5 w-16 lg:w-56">
 	<svelte:fragment slot="sidebarLeft">
 		<!-- Insert the list: -->
 		<Navigation />
