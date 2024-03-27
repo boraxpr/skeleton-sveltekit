@@ -8,7 +8,8 @@
 			<a href="/"><span class="hidden lg:block">Home</span> <Bed class="lg:hidden" /></a>
 		</li>
 		<li>
-			<a href="/todo"><span class="hidden lg:block">Todo</span><ListTodo class="lg:hidden" /></a>
+			<a href="/todo_ssr"><span class="hidden lg:block">Todo</span><ListTodo class="lg:hidden" /></a
+			>
 		</li>
 	</ul>
 </nav>
