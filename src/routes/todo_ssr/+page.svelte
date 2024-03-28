@@ -1,5 +1,4 @@
-<script async script lang="ts">
-	import { onMount } from 'svelte';
+<script script lang="ts">
 	import type { PageData } from './$types';
 	import {
 		ProgressRadial,
