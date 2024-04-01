@@ -15,9 +15,22 @@
 <!-- As Skeleton table needs tableMapperValues which needs todos to be fully fetched (not promise). By that reason, it's not possible to work with "todos" directly in the script. so TableSource (Skeleton object) needs to be worked in side "then" block -->
 <div class="card">
 	{#await data.todos}
-		<div class="w-full">
-			<ProgressRadial meter="stroke-primary-500" />
-		</div>
+		<section class="card w-full">
+			<div class="p-4 space-y-4">
+				<div class="placeholder animate-pulse" />
+				<div class="grid grid-cols-3 gap-8">
+					<div class="placeholder animate-pulse" />
+					<div class="placeholder animate-pulse" />
+					<div class="placeholder animate-pulse" />
+				</div>
+				<div class="grid grid-cols-4 gap-4">
+					<div class="placeholder animate-pulse" />
+					<div class="placeholder animate-pulse" />
+					<div class="placeholder animate-pulse" />
+					<div class="placeholder animate-pulse" />
+				</div>
+			</div>
+		</section>
 	{:then todos}
 		<MyTable {todos} />
 	{:catch error}
