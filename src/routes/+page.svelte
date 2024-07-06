@@ -4,6 +4,7 @@
 	import Prop2 from '$lib/assets/boraxprWiz2.png';
 	import Prop3 from '$lib/assets/boraxprWiz3.png';
 	import Prop4 from '$lib/assets/boraxprWiz4.png';
+	import Card from '$lib/Card.svelte';
 	export const imageSize = {
 		height: 100,
 		width: 100
@@ -30,35 +31,31 @@
 			</div>
 		</div>
 	</div>
-	<div class="card p-1 bg-gradient-to-r from-[#25b9bc] via-[#25ffbc] to-[#d5ffbc]">
-		<div class="bg-gray-800">
-			<header class="card-header text-2xl">Frontend</header>
-			<section class="p-4">
-				<div class="flex flex-row">
-					<div>
-						<img
-							{...imageSize}
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg"
-							alt="Svelte"
-						/>
-					</div>
-					<div>
-						<img
-							{...imageSize}
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
-							alt="React"
-						/>
-					</div>
-					<div>
-						<img
-							{...imageSize}
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg"
-							alt="Vue"
-						/>
-					</div>
-				</div>
-			</section>
-			<footer class="card-footer">(footer)</footer>
-		</div>
+	<div class="grid sm:md:lg:grid-cols-2 grid-cols-1 gap-4">
+		<Card header="Frontend" />
+		<Card
+			header="Backend"
+			techs={[
+				{
+					name: 'Spring',
+					src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg'
+				},
+				{
+					name: 'Go',
+					src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg'
+				},
+				{
+					name: 'Node',
+					src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg'
+				},
+				{
+					name: 'Rust',
+					src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-line.svg'
+				}
+			]}
+		/>
+		<Card header="Database" />
+		<Card header="Mobile" />
+		<Card header="DevOps" />
 	</div>
 </div>
