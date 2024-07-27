@@ -1,5 +1,5 @@
 # Skeleton-SvelteKit 💀
-
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/https://skeleton-sveltekit)
 Skeleton-SvelteKit is a project aimed at exploring the capabilities of SvelteKit and the SkeletonUI framework.
 Installation
 
