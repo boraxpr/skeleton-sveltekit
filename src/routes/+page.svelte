@@ -4,7 +4,8 @@
 	import Prop2 from '$lib/assets/boraxprWiz2.png';
 	import Prop3 from '$lib/assets/boraxprWiz3.png';
 	import Prop4 from '$lib/assets/boraxprWiz4.png';
-	import Card from '$lib/Card.svelte';
+	import Card from '$lib/Card/Card.svelte';
+	import { backendTechs, frontEndTechs } from '$lib/Card/techs';
 	export const imageSize = {
 		height: 100,
 		width: 100
@@ -32,28 +33,8 @@
 		</div>
 	</div>
 	<div class="grid sm:md:lg:grid-cols-2 grid-cols-1 gap-4">
-		<Card header="Frontend" />
-		<Card
-			header="Backend"
-			techs={[
-				{
-					name: 'Spring',
-					src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg'
-				},
-				{
-					name: 'Go',
-					src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg'
-				},
-				{
-					name: 'Node',
-					src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg'
-				},
-				{
-					name: 'Rust',
-					src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-line.svg'
-				}
-			]}
-		/>
+		<Card header="Frontend" techs={frontEndTechs} />
+		<Card header="Backend" techs={backendTechs} />
 		<Card header="Database" />
 		<Card header="Mobile" />
 		<Card header="DevOps" />

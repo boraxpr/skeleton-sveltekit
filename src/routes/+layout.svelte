@@ -1,25 +1,18 @@
 <script lang="ts">
-	import '../app.postcss';
-	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
-	import { initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/Navigation/Navigation.svelte';
-	// Highlight JS
-	import hljs from 'highlight.js/lib/core';
-	import 'highlight.js/styles/github-dark.css';
+	import { AppBar, AppShell, Drawer, getDrawerStore, initializeStores, LightSwitch } from '@skeletonlabs/skeleton';
+	import '../app.postcss';
+// Highlight JS
 	import { storeHighlightJs } from '@skeletonlabs/skeleton';
-	import xml from 'highlight.js/lib/languages/xml'; // for HTML
+	import hljs from 'highlight.js/lib/core';
+	import xml from 'highlight.js/lib/languages/xml';
+	import 'highlight.js/styles/github-dark.css';
+// for HTML
 	import css from 'highlight.js/lib/languages/css';
 	import javascript from 'highlight.js/lib/languages/javascript';
 	import typescript from 'highlight.js/lib/languages/typescript';
-
-	hljs.registerLanguage('xml', xml); // for HTML
-	hljs.registerLanguage('css', css);
-	hljs.registerLanguage('javascript', javascript);
-	hljs.registerLanguage('typescript', typescript);
-	storeHighlightJs.set(hljs);
-
-	// Floating UI for Popups
-	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
+// Floating UI for Popups
+	import { arrow, autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 	initializeStores();
@@ -56,7 +49,8 @@
 							</svg>
 						</span>
 					</button>
-					<strong class="h3 uppercase"><div class="hover:animate-shake">Boraxpr</div></strong>
+					<strong class="h3 uppercase"><div class="hover:animate-shake">
+						<a href='/'>Boraxpr</a></div></strong>
 				</div>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">

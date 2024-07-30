@@ -7,16 +7,16 @@
 	};
 	export let techs = [
 		{
-			name: 'Placeholder',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/devicon/devicon-original.svg'
+			name: 'Svelte',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg'
 		},
 		{
-			name: 'Placeholder',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/devicon/devicon-original.svg'
+			name: 'React',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg'
 		},
 		{
-			name: 'Placeholder',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/devicon/devicon-original.svg'
+			name: 'Vue',
+			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg'
 		}
 	];
 </script>

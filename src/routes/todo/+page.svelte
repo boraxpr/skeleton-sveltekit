@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { ProgressRadial } from '@skeletonlabs/skeleton';
 	import MyTable from '$lib/Table.svelte';
+	import { ProgressRadial } from '@skeletonlabs/skeleton';
+	import { onMount } from 'svelte';
 	let isLoading = false;
 
 	let data: { name: string; email: string; phone: string; website: string }[] = [];
